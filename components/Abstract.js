@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import Product from './Product';
 
 
 export function abstractRender(){
@@ -37,7 +38,7 @@ export function abstractRender(){
     })
     renderer.setSize(sizes.width, sizes.height)
     renderer.render(scene, camera)
-    renderer.setClearColor( 0xe2e8f0 , 1);
+    renderer.setClearColor( 0x000000 , 0);
     
     const controls = new OrbitControls(camera,canvas);
 
@@ -53,5 +54,6 @@ export function abstractRender(){
         window.requestAnimationFrame(loop);
       };
       loop();
+
 }
 

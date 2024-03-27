@@ -5,6 +5,11 @@ export default {
   darkMode: 'media', // or 'class'
   theme: {
     extend: {
+      colors:{
+        'primary': '#000000',
+        'secondary': '#ffffff',
+        'three':'#ffd700',
+      },
       fontFamily: {
         customfont: ['"IBM Plex Mono"', "sans-serif"]
       }
