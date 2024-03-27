@@ -1,8 +1,8 @@
-export default function Header(){
+export default function Navbar(){
 console.log("Main Reached")
   document.querySelector('#app').innerHTML = `
-  <header class="header w-[100vw] fixed ">
-    <nav class=" bg-slate-200 rounded-lg">
+  <header class="header w-[100vw] fixed z-[100]">
+    <nav class=" bg-three rounded-lg">
     
       <ul class="header__menu flex w-full justify-center ">
       
