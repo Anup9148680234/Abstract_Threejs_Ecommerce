@@ -6,4 +6,6 @@
     .btn-primary {
        @apply py-2 px-5 bg-secondary text-primary font-semibold rounded-full shadow-md hover:bg-three focus:outline-none focus:ring focus:ring-three focus:ring-opacity-75;
     }
+
+    
 }
