@@ -13,7 +13,7 @@ export function abstractRender(){
         shininess: 1 ,
         wireframe: true,
         transparent: false,
-        wireframeLinewidth: 2.5,
+        wireframeLinewidth: 3,
     });
     const mesh = new THREE.Mesh(geometry, material);
     

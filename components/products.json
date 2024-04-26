@@ -1,0 +1,14 @@
+{
+    "products" : [
+        {
+            "modelpath" : "/public/shiba.glb",
+            "canvas" : "canvas.prod1",
+            "cameraPositionZ" : 1.5
+        },
+        {
+            "modelpath" : "/public/ps5cont.glb",
+            "canvas" : "canvas.prod2",
+            "cameraPositionZ" : 0.5
+        }
+    ]
+}
