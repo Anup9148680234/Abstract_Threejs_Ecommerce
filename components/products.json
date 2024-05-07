@@ -1,14 +1,47 @@
 {
     "products" : [
         {
-            "modelpath" : "/public/shiba.glb",
+            "modelpath" : "/public/samsung_galaxy_s22_ultra.glb",
             "canvas" : "canvas.prod1",
-            "cameraPositionZ" : 1.5
+            "cameraPositionZ" : 5,
+            "cameraPositionY": -2.5
         },
         {
             "modelpath" : "/public/ps5cont.glb",
             "canvas" : "canvas.prod2",
             "cameraPositionZ" : 0.5
+        },
+        {
+            "modelpath" : "/public/sauvage_perfume.glb",
+            "canvas" : "canvas.prod3",
+            "cameraPositionZ" : 0.2,
+            "lightIntensity": 10
+        },
+        {
+            "modelpath" : "/public/apple_watch_ultra_2.glb",
+            "canvas" : "canvas.prod4",
+            "cameraPositionZ" : 0.15
+        },
+        {
+            "modelpath" : "/public/apple_iphone_13_pro_max.glb",
+            "canvas" : "canvas.prod5",
+            "cameraPositionZ" : 1
+        },
+        {
+            "modelpath" : "/public/macbool_pro_m3.glb",
+            "canvas" : "canvas.prod6",
+            "cameraPositionZ" : 0.4,
+            "cameraPositionY":-0.1
+        },
+        {
+            "modelpath" : "/public/unused_blue_vans_shoe.glb",
+            "canvas" : "canvas.prod7",
+            "cameraPositionZ" : 5
+        },
+        {
+            "modelpath" : "/public/dyson_supersonic.glb",
+            "canvas" : "canvas.prod8",
+            "cameraPositionZ" : 7
         }
     ]
 }
