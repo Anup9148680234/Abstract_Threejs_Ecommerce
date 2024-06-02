@@ -1,4 +1,5 @@
 export default function Products(){
+
   let products = "";
   let dict = [
     {
@@ -41,13 +42,13 @@ export default function Products(){
     }
   ]
   for(let i=0; i<12 ; i++){
-    products += `<a href="#" class="group" draggable="false">
+    products += `<div class="group" draggable="false">
                   <div class="flex w-full overflow-hidden rounded-lg bg-gray-200 justify-center">
-                    <canvas class="prod${i+1}"></canvas>
+                    <canvas class="prod${i+1}" onwheel="event.preventDefault()" ontouchmove="event.preventDefault()"></canvas>
                   </div>
                   <h3 class="mt-4 text-sm text-gray-700">${dict[i].name}</h3>
                   <p class="mt-1 text-lg font-medium text-gray-900">${dict[i].price}</p>
-                </a>`
+                </div>`
   }
 
     document.querySelector('#product').innerHTML = `
