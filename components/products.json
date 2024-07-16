@@ -1,17 +1,16 @@
 {
     "products" : [
         {
-            
             "modelpath" : "/public/samsung_galaxy_s22_ultra.glb",
             "canvas" : "canvas.prod1",
             "cameraPositionZ" : 5,
             "cameraPositionY": -2.5
-            
         },
         {
-            "modelpath" : "/public/ps5.glb",
+            "modelpath" : "/public/men_tshirt.glb",
             "canvas" : "canvas.prod2",
-            "cameraPositionZ" : 0.5
+            "cameraPositionZ" : 35,
+            "cameraPositionY":  -50
         },
         {
             "modelpath" : "/public/sauvage_perfume.glb",
@@ -38,12 +37,38 @@
         {
             "modelpath" : "/public/unused_blue_vans_shoe.glb",
             "canvas" : "canvas.prod7",
-            "cameraPositionZ" : 5
+            "cameraPositionZ" : 5,
+            "cameraPositionY": -1
         },
         {
             "modelpath" : "/public/dyson_supersonic.glb",
             "canvas" : "canvas.prod8",
             "cameraPositionZ" : 7
+        },
+        {
+            "modelpath":"/public/bleu_de_chanel_perfume..glb",
+            "canvas" : "canvas.prod9",
+            "cameraPositionZ": 12
+        },
+        {
+            "modelpath":"/public/gucci.glb",
+            "canvas" : "canvas.prod10",
+            "cameraPositionZ": 0.75,
+            "cameraPositionY": -0.25
+        },
+        {
+            "modelpath":"/public/gaming_laptop.glb",
+            "canvas" : "canvas.prod11",
+            "cameraPositionZ": 0.6,
+            "cameraPositionY":-0.1
+        },
+        {
+            "modelpath":"/public/geforce_rtx_4090.glb",
+            "canvas" : "canvas.prod12",
+            "cameraPositionZ": 350,
+
+            "lightIntensity": 5
         }
+        
     ]
 }

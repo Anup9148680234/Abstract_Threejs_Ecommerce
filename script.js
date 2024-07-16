@@ -6,9 +6,9 @@ const dict = [
       
     },
     {
-      "name": "PS5 Controller",
-      "price": "$499",
-      "url": "/ps5"
+      "name": "Blue T-Shirt",
+      "price": "$4.9",
+      "url": "/blue_t_shirt"
     },{
       "name": "Sauvage Perfume",
       "price": "$99",
@@ -34,9 +34,21 @@ const dict = [
       "price": "$499",
       "url": "/dyson_supersonic_hair_dryer"
     },{
-      "name": "Shiba Inu Action Figure",
+      "name": "Bleu de Chanel Perfume",
       "price": "$48",
-      "url": "/shiba_inu_action_figure"
+      "url": "/bleu_de_chanel_perfume"
+    },{
+      "name": "Gucci HandBag",
+      "price": "$999",
+      "url": "/gucci_handbag"
+    },{
+      "name": "Alien Predator Laptop",
+      "price": "$1199",
+      "url": "/alien_predator_laptop"
+    },{
+      "name": "Nvidia RTX 4090",
+      "price": "$1299",
+      "url": "/nvidia_rtx_4090"
     }
 ];
 
@@ -65,12 +77,13 @@ function renderProductDetails(product) {
 
 (function() {
     const slug = getSlugFromUrl();
-    const product = findProductBySlug(slug);
-    if(slug == ''){
-        showHomPage = true;
+    console.log("Slug" + slug);
+    if(slug== "/"){
+      
+    }else{
+      const product = findProductBySlug(slug);
+      renderProductDetails(product);
+      document.getElementById('product').style.display = "none";
     }
-    else{
-        showHomPage = false;
-    }
-    renderProductDetails(product);
+
 })();   
