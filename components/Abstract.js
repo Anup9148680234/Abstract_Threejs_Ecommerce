@@ -1,8 +1,6 @@
 import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-
-
 export function abstractRender(){
     const scene = new THREE.Scene()
     scene.name = "Abstract";
@@ -47,13 +45,12 @@ export function abstractRender(){
     controls.autoRotate = true;
     controls.autoRotateSpeed = 2;
 
-      
-      const loop = () =>{
+    const loop = () =>{
         controls.update();
         renderer.render(scene, camera);
         window.requestAnimationFrame(loop);
-      };
-      loop();
+    };
+    loop();
 
 }
 

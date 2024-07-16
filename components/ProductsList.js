@@ -1,35 +1,43 @@
 export default function Products(){
-
   let products = "";
   let dict = [
     {
       "name": "Samsung Galaxy S22 Ultra",
-      "price": "$899"
+      "price": "$899",
+      "url": "/samsung_galaxy_s22_ultra",
     },
     {
       "name": "PS5 Controller",
-      "price": "$499"
+      "price": "$499",
+      "url": "/ps5"
     },{
       "name": "Sauvage Perfume",
-      "price": "$99"
+      "price": "$99",
+      "url": "/sauvage_perfume"
     },{
       "name": "Apple Watch Ultra 2",
-      "price": "$799"
+      "price": "$799",
+      "url": "/apple_watch_ultra_2"
     },{
       "name": "Apple iPhone 13 pro max",
-      "price": "$899"
+      "price": "$899",
+      "url": "/iphone_13_pro_max"
     },{
       "name": "Apple MacBook Pro M3 ",
-      "price": "$1299"
+      "price": "$1299",
+      "url": "/macbook_pro_m3"
     },{
       "name": "Blue Vans Shoes",
-      "price": "$69"
+      "price": "$69",
+      "url": "/blue_vans_shoes"
     },{
       "name": "Dyson Supersonic Hair Dryer",
-      "price": "$499"
+      "price": "$499",
+      "url": "/dyson_supersonic_hair_dryer"
     },{
       "name": "Shiba Inu Action Figure",
-      "price": "$48"
+      "price": "$48",
+      "url": "/shiba_inu_action_figure"
     },{
       "name": "Shiba Inu Action Figure",
       "price": "$48"
@@ -42,15 +50,14 @@ export default function Products(){
     }
   ]
   for(let i=0; i<12 ; i++){
-    products += `<div class="group" draggable="false">
+    products += `<div class="group" draggable="false" onclick="window.location.href='${dict[i].url}'">
                   <div class="flex w-full overflow-hidden rounded-lg bg-gray-200 justify-center">
-                    <canvas class="prod${i+1}" onwheel="event.preventDefault()" ontouchmove="event.preventDefault()"></canvas>
+                    <canvas class="prod${i+1}"></canvas>
                   </div>
                   <h3 class="mt-4 text-sm text-gray-700">${dict[i].name}</h3>
                   <p class="mt-1 text-lg font-medium text-gray-900">${dict[i].price}</p>
                 </div>`
   }
-
     document.querySelector('#product').innerHTML = `
     <div class="bg-white  h-full overflow-auto ">
     <div class="mx-auto max-w-2xl px-4  sm:px-6  lg:max-w-7xl lg:px-8">
@@ -63,7 +70,6 @@ export default function Products(){
     </div>
   </div>
     `
-
 }
 
 

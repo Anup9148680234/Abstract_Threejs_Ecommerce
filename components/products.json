@@ -1,13 +1,15 @@
 {
     "products" : [
         {
+            
             "modelpath" : "/public/samsung_galaxy_s22_ultra.glb",
             "canvas" : "canvas.prod1",
             "cameraPositionZ" : 5,
             "cameraPositionY": -2.5
+            
         },
         {
-            "modelpath" : "/public/ps5cont.glb",
+            "modelpath" : "/public/ps5.glb",
             "canvas" : "canvas.prod2",
             "cameraPositionZ" : 0.5
         },
