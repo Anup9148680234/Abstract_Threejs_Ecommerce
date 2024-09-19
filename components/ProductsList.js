@@ -1,4 +1,9 @@
 export default function Products(){
+  document.getElementById('root').innerHTML += `
+  <div id="product">
+  </div>
+  ` 
+
   let products = "";
   let dict = [
     {
@@ -6,8 +11,8 @@ export default function Products(){
       "price": "$899"
     },
     {
-      "name": "PS5 Controller",
-      "price": "$499"
+      "name": "Men Regular Fit Sporty T-Shirt",
+      "price": "$25"
     },{
       "name": "Sauvage Perfume",
       "price": "$99"
@@ -27,27 +32,27 @@ export default function Products(){
       "name": "Dyson Supersonic Hair Dryer",
       "price": "$499"
     },{
-      "name": "Shiba Inu Action Figure",
-      "price": "$48"
+      "name": "Bleu de Chanel Perfume",
+      "price": "$99"
     },{
-      "name": "Shiba Inu Action Figure",
-      "price": "$48"
+      "name": "Gucci Handbag",
+      "price": "$999"
     },{
-      "name": "Shiba Inu Action Figure",
-      "price": "$48"
+      "name": "MSI Gaming Laptop",
+      "price": "$1299"
     },{
-      "name": "Shiba Inu Action Figure",
-      "price": "$48"
+      "name": "Nvdia Geforce RTX 4090",
+      "price": "$1999"
     }
   ]
   for(let i=0; i<12 ; i++){
-    products += `<a href="#" class="group" draggable="false">
+    products += `<div  class="group" draggable="false">
                   <div class="flex w-full overflow-hidden rounded-lg bg-gray-200 justify-center">
                     <canvas class="prod${i+1}"></canvas>
                   </div>
                   <h3 class="mt-4 text-sm text-gray-700">${dict[i].name}</h3>
                   <p class="mt-1 text-lg font-medium text-gray-900">${dict[i].price}</p>
-                </a>`
+                </div>`
   }
 
     document.querySelector('#product').innerHTML = `
