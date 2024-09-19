@@ -2,7 +2,6 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 
-
 export function abstractRender(){
     const scene = new THREE.Scene()
     scene.name = "Abstract";
@@ -13,7 +12,7 @@ export function abstractRender(){
         shininess: 1 ,
         wireframe: true,
         transparent: false,
-        wireframeLinewidth: 3,
+        wireframeLinewidth: 2.5,
     });
     const mesh = new THREE.Mesh(geometry, material);
     
@@ -38,7 +37,7 @@ export function abstractRender(){
     })
     renderer.setSize(sizes.width, sizes.height)
     renderer.render(scene, camera)
-    renderer.setClearColor( 0x000000 , 0);
+    renderer.setClearColor( 0xe2e8f0 , 1);
     
     const controls = new OrbitControls(camera,canvas);
 
@@ -54,6 +53,4 @@ export function abstractRender(){
         window.requestAnimationFrame(loop);
       };
       loop();
-
 }
-
